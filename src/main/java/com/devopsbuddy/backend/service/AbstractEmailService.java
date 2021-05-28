@@ -20,6 +20,7 @@ public abstract class AbstractEmailService implements EmailService {
         return message;
     }
 
+    @Override
     public void sendFeedbackEmail(FeedbackPojo feedbackPojo) {
         sendGenericEmailMessage(prepareSimpleMailMessageFromFeedbackPojo(feedbackPojo));
     }
